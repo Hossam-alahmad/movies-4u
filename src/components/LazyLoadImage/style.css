@@ -1,0 +1,10 @@
+.lazy-load-image-background,
+.lazy-load-image-background img {
+  height: 100%;
+  width: 100%;
+  transition: all 0.2s !important;
+}
+.lazy-load-image-background img {
+  object-fit: cover;
+  object-position: center;
+}

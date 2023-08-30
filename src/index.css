@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "IBMPlexSans-Medium";
+  src: url("./assets/fonts/IBMPlexSans-Medium.otf");
+}
+
+@tailwind base;
+@layer base {
+  body {
+    font-family: "IBMPlexSans-Medium", "Helvetica Neue", Helvetica, Arial;
+    @apply bg-third;
+  }
+  h1 {
+    @apply text-5xl;
+  }
+  h2 {
+    @apply text-4xl;
+  }
+  h3 {
+    @apply text-3xl;
+  }
+  h4 {
+    @apply text-2xl;
+  }
+  h5 {
+    @apply text-xl;
+  }
+  h6 {
+    @apply text-lg;
+  }
+}
+@tailwind components;
+@layer {
+  .menuitem-mobile {
+    @apply absolute bg-black-light w-full top-full left-0 flex-col items-start;
+  }
+}
+@tailwind utilities;
