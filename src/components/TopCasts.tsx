@@ -16,7 +16,7 @@ const TopCasts = ({ casts, loading }: TopCastsProps) => {
   return !loading ? (
     casts.length > 0 && (
       <div className="top-cast mt-10">
-        <h3 className="mb-4">Top Cast</h3>
+        <h3 className="mb-4 text-[1.4rem] sm:text-3xl">Top Cast</h3>
         {casts.length > 4 ? (
           <Carousel>
             {casts.map((c) => {

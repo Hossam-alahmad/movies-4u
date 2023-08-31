@@ -118,7 +118,7 @@ const DetailsBanner = ({
         </div>
         <div className="info col-span-2">
           <div className="header mb-5">
-            <h3 className="title">
+            <h3 className="title text-[1.4rem] sm:text-3xl">
               {`${
                 data.details?.title ||
                 data.details?.original_title ||
@@ -145,7 +145,7 @@ const DetailsBanner = ({
             })}
           </div>
           <div className="play-and-rating flex gap-4 mb-10">
-            <div className="w-[75px]">
+            <div className="w-[60px] sm:w-[75px]">
               <CircleProgress value={data.details?.vote_average || 0} />
             </div>
             <Button
@@ -155,19 +155,19 @@ const DetailsBanner = ({
               }}
               className="flex group items-center gap-2 p-0 text-lg self-center"
             >
-              <span className="text-[80px] group-hover:text-primary transition-all">
+              <span className="text-[65px] sm:text-[80px] group-hover:text-primary transition-all">
                 {icons.play}
               </span>{" "}
               Watch Trailer
             </Button>
           </div>
           <div className="overview">
-            <h3 className="mb-4">Overview</h3>
+            <h3 className="mb-4  text-[1.4rem] sm:text-3xl">Overview</h3>
             <p>{data.details?.overview}</p>
           </div>
           <hr className="my-5 border-third-light/20" />
           <div className="status">
-            <ul className="flex justify-between lg:justify-start lg:gap-10 ">
+            <ul className="flex  justify-between lg:justify-start lg:gap-10 ">
               <li>
                 <h6>Status</h6>
                 <span className="text-zinc-500">{data.details?.status}</span>

@@ -41,7 +41,7 @@ const Similar = ({ id, mediaType }: SimilarProps) => {
   return (
     !details.loading && (
       <div className="similar mb-10">
-        <h3 className="mb-4">
+        <h3 className="mb-4 text-[1.4rem] sm:text-3xl">
           Similar {mediaType === "tv" ? "Tv Show" : "Movies"}
         </h3>
         <Carousel>

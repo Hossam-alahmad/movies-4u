@@ -89,7 +89,7 @@ const Explore = () => {
               next={getNextDataList}
               dataLength={details.data?.results.length}
             >
-              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
                 {
                   // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   details.data?.results?.map((item: any) => {
@@ -112,7 +112,7 @@ const Explore = () => {
             </h4>
           )
         ) : (
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
+          <div className="grid grid-cols-2  sm:grid-cols-3 md:grid-cols-6 gap-4">
             {Array(18)
               .fill(0)
               .map((_item, index) => (

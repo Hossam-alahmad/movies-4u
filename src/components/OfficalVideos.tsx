@@ -20,13 +20,13 @@ const OfficalVideos = ({ videos, loading }: OfficialVideosProps) => {
   return !loading
     ? videos.length > 0 && (
         <div className="my-10">
-          <h3 className="mb-4">Official Videos</h3>
+          <h3 className="mb-4 text-[1.4rem] sm:text-3xl">Official Videos</h3>
           <Carousel>
             {videos.map((video) => {
               return (
                 <div
                   key={video.id}
-                  className="relative rounded-md overflow-hidden item w-1/2 h-[150px] lg:w-1/5 lg:h-[200px] bg-third-light/20  flex-shrink-0"
+                  className="relative rounded-md overflow-hidden item w-full sm:w-1/2 h-[150px] lg:w-1/5 lg:h-[200px] bg-third-light/20  flex-shrink-0"
                 >
                   <Image
                     src={`https://img.youtube.com/vi/${video.key}/mqdefault.jpg`}

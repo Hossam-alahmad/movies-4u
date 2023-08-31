@@ -35,7 +35,7 @@ const Carousel = ({ children }: CarouselProps) => {
       </Button>
       <div
         ref={carouselContainer}
-        className="carousel-items gap-[10px] md:-mx-[20px]  overflow-hidden scrollbar-hide flex h-full"
+        className="carousel-items gap-[10px] md:-mx-[20px]  overflow-y-hidden scrollbar-hide flex h-full"
       >
         {children}
       </div>

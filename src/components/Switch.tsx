@@ -13,7 +13,8 @@ const Switch = ({ data, changeTabHandler }: SwitchProps) => {
 
   const tabClickHandler = (index: number) => {
     setSelectedTab(index);
-    setLeft(index * 100);
+    if (window.outerWidth < 639) setLeft(index * 80);
+    else setLeft(index * 100);
     setTimeout(() => {
       changeTabHandler(data[index]);
     }, 300);
@@ -29,7 +30,7 @@ const Switch = ({ data, changeTabHandler }: SwitchProps) => {
             buttonVariant({
               variant: "gradient",
               bgColor: "gradient-primary",
-              className: "absolute lg:py-4 w-2/4 h-3/4 rounded-full",
+              className: "absolute  lg:py-4 w-2/4 h-3/4 rounded-full",
             })
           )}
         />
@@ -37,7 +38,7 @@ const Switch = ({ data, changeTabHandler }: SwitchProps) => {
           return (
             <span
               onClick={() => tabClickHandler(index)}
-              className={`relative transition-all  cursor-pointer p-2 min-w-[100px] text-center  z-10   ${
+              className={`relative transition-all  cursor-pointer p-2 min-w-[80px] sm:min-w-[100px] text-center  z-10   ${
                 selectedTab === index ? "text-secondary" : "text-black"
               }`}
               key={index}

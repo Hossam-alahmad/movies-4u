@@ -70,12 +70,12 @@ const Header = () => {
     >
       <div className="md:container mx-auto ">
         <div className="flex justify-between items-center">
-          <Link to="/" className="text-4xl text-primary px-2">
+          <Link to="/" className="text-2xl lg:text-4xl text-primary px-2">
             MOVIES 4U
           </Link>
           <ul
-            className={`${
-              isMobileScreen ? "menuitem-mobile" : ""
+            className={` ${
+              isMobileScreen ? "menuitem-mobile px-2" : ""
             } transition-all duration-300 flex justify-between  text-xl gap-2 ${
               showMenuItems
                 ? "top-full"

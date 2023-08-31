@@ -57,7 +57,7 @@ const HeroSection = () => {
       <div className="container mx-auto h-full">
         <div className="hero-content relative z-10 p-4 h-full flex flex-col items-center justify-center">
           <div className="text-white text-center">
-            <h1 className="mb-2">Welcome to Movies 4u</h1>
+            <h1 className="mb-2 text-3xl lg:text-5xl">Welcome to Movies 4u</h1>
             <p className="mb-10">
               Millions of movies,Tv shows and people to discover. Explore Now
             </p>
